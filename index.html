@@ -165,16 +165,19 @@
                     <span class="contact-text"> kumhari,kadwa,katihar,Bihar</span>
                 </div>
 
-                <form action="" class="contact-form">
-                    <div class="contact-inputs">
-                        <input type="text" placeholder="Name" class="contact-input">
-                        <input type="email" placeholder="Email" class="contact-input">
-                    </div>
+               <form action="https://formspree.io/f/xwpvjpbz" method="POST" class="contact-form">
+  <div class="contact-inputs">
+    <input type="text" name="name" placeholder="Name" class="contact-input">
+    <input type="email" name="email" placeholder="Email" class="contact-input">
+  </div>
 
-                    <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+  <textarea name="message" placeholder="Your Message" class="contact-input" rows="10"></textarea>
 
-                    <input type="submit" value="Send" class="contact-button">
-                </form>
+  <input type="hidden" name="_subject" value="Contact Form Submission">
+  <input type="hidden" name="_next" value="thankyou.html">
+
+  <input type="submit" value="Send" class="contact-button">
+</form>
             </div>
         </section>
 
