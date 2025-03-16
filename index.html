@@ -171,17 +171,18 @@
 
               <form action="https://api.staticforms.xyz/submit" method="post" class="contact-form">
   <div class="contact-inputs">
-    <input type="text" name="name" placeholder="Your Name" class="contact-input">
-    <input type="text" name="email" placeholder="Your Email" class="contact-input" />
+    <input type="text" name="name" placeholder="Your Name" class="contact-input" style="outline: none; border: 1px solid #ccc; border-radius: 5px; padding: 10px; font-size: 16px;" onfocus="this.style.borderColor='#007bff'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)'" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+    <input type="text" name="email" placeholder="Your Email" class="contact-input" style="outline: none; border: 1px solid #ccc; border-radius: 5px; padding: 10px; font-size: 16px;" onfocus="this.style.borderColor='#007bff'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)'" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'" />
   </div>
-  <textarea name="message"></textarea>
+  <textarea name="message" placeholder="Your Message" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; resize: vertical; outline: none; box-sizing: border-box;" onfocus="this.style.borderColor='#007bff'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)'" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
   <input type="text" name="honeypot" style="display:none">
   <input type="hidden" name="accessKey" value="823984ba-289a-4f18-b0df-eea7af1bc1ce">
   <input type="hidden" name="subject" value="Contact us from - example.com" />
   <input type="hidden" name="replyTo" value="@">
   <input type="hidden" name="redirectTo" value="https://suman-mehta.github.io/thankyou.html/">
-  <input type="submit" value="Submit" />
+  <input type="submit" value="Submit" style="background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'" />
 </form>
+
                 
             </div>
         </section>
