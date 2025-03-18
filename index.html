@@ -166,19 +166,21 @@
                     <h3 class="contact-subtitle">ADDRESS</h3>
                     <span class="contact-text"> kumhari,kadwa,katihar,Bihar</span>
                 </div>
-   <form action="https://api.staticforms.xyz/submit" method="post" id="contactForm">
-  <div class="contact-inputs">
-    <input type="text" name="name" placeholder="Your Name" required class="ci" onfocus="this.style.borderColor='#007bff';this.style.boxShadow='0 0 5px rgba(0,123,255,.5)'" onblur="this.style.borderColor='#ccc';this.style.boxShadow='none'">
-    <input type="email" name="email" placeholder="Your Email" required class="ci" onfocus="this.style.borderColor='#007bff';this.style.boxShadow='0 0 5px rgba(0,123,255,.5)'" onblur="this.style.borderColor='#ccc';this.style.boxShadow='none'">
-  </div>
-  <textarea name="message" placeholder="Your Message" required onfocus="this.style.borderColor='#007bff';this.style.boxShadow='0 0 5px rgba(0,123,255,.5)'" onblur="this.style.borderColor='#ccc';this.style.boxShadow='none'"></textarea>
-  <input type="text" name="honeypot" style="display:none">
-  <input type="hidden" name="accessKey" value="823984ba-289a-4f18-b0df-eea7af1bc1ce">
-  <input type="hidden" name="subject" value="Contact us from - example.com" />
-  <input type="hidden" name="replyTo" value="@">
-  <input type="hidden" name="redirectTo" value="https://suman-mehta.github.io/thankyou.html/">
-  <input type="submit" value="Submit" onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">
-</form>
+   <div class="contact-form-container">
+  <form action="https://api.staticforms.xyz/submit" method="post" id="contactForm">
+    <div class="contact-inputs">
+      <input type="text" name="name" placeholder="Your Name" required class="ci" onfocus="this.style.borderColor='#007bff';this.style.boxShadow='0 0 5px rgba(0,123,255,.5)'" onblur="this.style.borderColor='#ccc';this.style.boxShadow='none'">
+      <input type="email" name="email" placeholder="Your Email" required class="ci" onfocus="this.style.borderColor='#007bff';this.style.boxShadow='0 0 5px rgba(0,123,255,.5)'" onblur="this.style.borderColor='#ccc';this.style.boxShadow='none'">
+    </div>
+    <textarea name="message" placeholder="Your Message" required onfocus="this.style.borderColor='#007bff';this.style.boxShadow='0 0 5px rgba(0,123,255,.5)'" onblur="this.style.borderColor='#ccc';this.style.boxShadow='none'"></textarea>
+    <input type="text" name="honeypot" style="display:none">
+    <input type="hidden" name="accessKey" value="823984ba-289a-4f18-b0df-eea7af1bc1ce">
+    <input type="hidden" name="subject" value="Contact us from - example.com" />
+    <input type="hidden" name="replyTo" value="@">
+    <input type="hidden" name="redirectTo" value="https://suman-mehta.github.io/thankyou.html/">
+    <input type="submit" value="Submit" onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">
+  </form>
+</div>
 
 <script>
   const form = document.getElementById('contactForm');
@@ -191,12 +193,55 @@
 </script>
 
 <style>
-  .ci { outline: none; border: 1px solid #ccc; border-radius: 5px; padding: 10px; font-size: 16px; }
-  textarea { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; resize: vertical; outline: none; box-sizing: border-box; }
-  input[type="submit"] { background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s ease; }
-</style>
-
-                
+  .contact-form-container {
+    max-width: 600px; /* Adjust this value to match your website's container width */
+    margin: 0 auto; /* Center the form */
+    padding: 20px; /* Add padding for spacing */
+  }
+  .contact-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ci {
+    width: 48%; /* Adjust width for input fields */
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+    outline: none;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  @media (max-width: 600px) {
+    .contact-inputs {
+      flex-direction: column;
+    }
+    .ci {
+      width: 100%;
+    }
+  }
+</style>         
             </div>
         </section>
 
